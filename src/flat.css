@@ -1,0 +1,148 @@
+/* Header */
+header {
+    position: sticky;
+}
+
+.hdr {
+    align-items: center;
+    background: white;
+    backdrop-filter: unset;
+}
+
+.hdr-desktop-nav {
+    gap: 32px;
+}
+
+.hdr-desktop-nav-btn {
+    color: black;
+    background: unset;
+    border: unset;
+}
+
+.hdr-desktop-nav-btn path {
+    fill: black;
+}
+
+.hdr-desktop-nav-btn-active {
+    background: unset;
+    color: red;
+    border: unset;
+}
+
+.hdr-desktop-nav-btn:hover, .hdr-desktop-nav-btn:focus-visible {
+    background: unset;
+    border: unset;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.hdr-desktop-nav-btn-active:hover, .hdr-desktop-nav-btn-active:focus-visible {
+    background: unset;
+    border: unset;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+.hdr-mobile-nav-toggle path {
+    fill: black;
+}
+
+
+/*  Desktop  */
+@media only screen and (min-width: 769px) {
+    .hdr:hover {
+        height: 128px;
+        background: white;
+    }
+
+    .hdr-logo img {
+        height: 64px;
+    }
+}
+
+
+
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    .hero-wrapper {
+        justify-content: flex-start;
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 768px) {
+    .hero-wrapper {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+/* Call to Action */
+.cta {
+    border: none;
+    background: black;
+    border-radius: unset;
+}
+
+.cta:hover, .cta:focus-visible {
+    background: black;
+    color: white;
+    border: none;
+    outline: 2px solid white;
+    outline-offset: -8px;
+}
+
+
+
+
+
+/* Landing form */
+.landing-form-wrapper {
+    background: red;
+    color: white;
+}
+
+.landing-form-wrapper .form-field path {
+    fill: white;
+}
+
+.landing-form-wrapper .form-field input, .landing-form-wrapper .form-field select, .landing-form-wrapper .form-field textarea {
+    color: white;
+}
+
+.landing-form-wrapper .form-field option {
+    color: black;
+}
+
+.landing-form-wrapper .form-field:focus-within {
+    border-color: white;
+}
+
+
+
+
+
+
+/* Intro */
+.intro {
+    background: white;
+    color: black;
+}
+
+
+
+
+/* Service span */
+.service-span-wrapper {
+    background: white !important;
+    color: black !important;
+}
+
+.service-span-icon-wrapper path {
+    fill: black !important;
+}

@@ -1,0 +1,22 @@
+.terms_main {
+    margin: 128px 0px 128px 0px;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.terms_main h1, .terms_main h2, .terms_main p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.terms_main h1, .terms_main h2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}

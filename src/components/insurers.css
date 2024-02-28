@@ -1,0 +1,40 @@
+.insurers {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.insurer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insurer>* {
+    width: 100%;
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    .insurer {
+        width: 10%;
+    }
+
+    .insurer.bigger {
+        width: 20%;
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 768px) {
+    .insurer {
+        width: 25%;
+    }
+}

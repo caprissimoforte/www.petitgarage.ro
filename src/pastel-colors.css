@@ -1,0 +1,74 @@
+.hdr {
+    border-bottom: 4px solid #BF3131;
+}
+
+.hdr-desktop-nav-btn-active, .hdr-mobile-nav-btn-active {
+    border-radius: unset;
+    color: white !important;
+    background: #BF3131 !important;
+}
+
+.hdr-desktop-nav-btn-active path, .hdr-mobile-nav-btn-active path {
+    fill: white !important;
+}
+
+.hdr-desktop-nav-btn, .hdr-desktop-nav-btn-active {
+    border-radius: 8px;
+}
+
+.hdr-desktop-nav-btn-active:hover path, .hdr-mobile-nav-btn-active:hover path {
+    fill: white !important;
+}
+
+.hero-wrapper {
+    background: linear-gradient(45deg, black, transparent);
+}
+
+.hero-card {
+    border-radius: 32px;
+    outline: 4px solid #BF3131;
+    outline-offset: -8px;
+}
+
+.landing-form-wrapper {
+    background: #BF3131 !important;
+}
+
+.intro {
+    background: #BF3131 !important;
+    color: #F3EDC8 !important;
+}
+
+.cta {
+    background: #7D0A0A !important;
+    border-radius: 8px !important;
+}
+
+.feature-cards-container {
+    background: radial-gradient(#7D0A0A 8%, transparent 8%) !important;
+    background-position: 0% 0% !important;
+    background-size: 5vmin 5vmin !important;
+}
+
+.testimonial {
+    background: #BF3131 !important;
+}
+
+
+
+.feature-card {
+    background: #BF3131 !important;
+    color: white;
+}
+
+.feature-card path {
+    fill: white;
+}
+
+@media only screen and (min-width: 768px) {
+    main img {
+        width: 100%;
+        box-sizing: border-box;
+        align-self: center;
+    }
+}

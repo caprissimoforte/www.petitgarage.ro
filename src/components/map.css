@@ -1,0 +1,20 @@
+.map-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#map {
+    width: 100%;
+    height: 100vmax;
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    .map-wrapper {
+        max-width: 1920px;
+        max-height: 1080px;
+    }
+}

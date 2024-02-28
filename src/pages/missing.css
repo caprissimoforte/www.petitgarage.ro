@@ -1,0 +1,53 @@
+.missing_main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    z-index: -10;
+}
+
+.missing_main * {
+    margin: 0;
+    padding: 0;
+}
+
+.missing_main h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    .missing_main div {
+        gap: 64px;
+    }
+
+    .missing_main h1 {
+        font-size: 10rem;
+    }
+
+    .missing_main p {
+        font-size: 3rem;
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 768px) {
+    .missing_main div {
+        gap: 16px;
+    }
+
+    .missing_main h1 {
+        font-size: 10rem;
+    }
+
+    .missing_main p {
+        padding: 0px 5% 0px 5%;
+        font-size: 2rem;
+    }
+}

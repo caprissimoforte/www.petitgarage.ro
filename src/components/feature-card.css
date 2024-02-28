@@ -1,0 +1,43 @@
+.feature-card {
+    display: table-cell;
+    box-sizing: border-box;
+    padding: 5vmin;
+    height: 100%;
+    min-height: 100%;
+    color: black;
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.25);
+    border: 2px solid white;
+}
+
+.feature-card svg {
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+    min-height: 64px;
+}
+
+.feature-card h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.feature-card p {
+    font-size: 1.85rem;
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    .feature-card {
+        min-width: 40vw;
+        max-width: 40%;
+        width: max-content;
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 768px) {
+    .feature-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,195 @@
+.landing-form-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    box-sizing: border-box;
+    row-gap: 64px;
+}
+
+.garage-info {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    flex-direction: column;
+    gap: 48px;
+    text-align: center;
+}
+
+.garage-info>h1 {
+    text-align: center;
+}
+
+.garage-info * {
+    width: 100%;
+}
+
+.landing_info-spans {
+    box-sizing: border-box;
+}
+
+.testimonial-container {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px 0px 32px 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.testimonial-container>h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.aboutus {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    gap: 48px;
+}
+
+.aboutus-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus-info {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.aboutus-info>* {
+    width: 100%;
+    text-align: left;
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    .landing-form-wrapper {
+        padding: 5% 10%;
+    }
+
+    .garage-info {
+        width: 60%;
+    }
+
+    .garage-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .garage-info p {
+        font-size: 2rem;
+    }
+
+    .landing_info-spans {
+        padding: 5% 10%;
+    }
+
+    .aboutus {
+        padding: 5%;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .aboutus-img-desktop {
+        width: 35%;
+    }
+
+    .aboutus-img-mobile {
+        display: none;
+    }
+
+    .aboutus-info {
+        width: 55%;
+    }
+
+    .aboutus-info h1 {
+        font-size: 4rem;
+    }
+
+    .aboutus-info h2 {
+        font-size: 2rem;
+    }
+
+    .aboutus-info p {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-container {
+        display: table-row;
+        border-spacing: 32px;
+    }
+
+    .testimonial-container>h1 {
+        font-size: 4rem;
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 768px) {
+    .landing-form-wrapper {
+        flex-direction: column-reverse;
+        padding: 10% 5%;
+    }
+
+    .garage-info {
+        width: 100%;
+    }
+
+    .garage-info h1, .aboutus h1 {
+        font-size: 1.75rem;
+    }
+
+    .garage-info p, .aboutus p {
+        font-size: 1.5rem;
+    }
+
+    .aboutus {
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutus-img-desktop {
+        display: none;
+    }
+
+    .aboutus-img-mobile {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutus-info {
+        width: 100%;
+    }
+
+    .aboutus-info h1 {
+        font-size: 3rem;
+    }
+
+    .aboutus-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .aboutus-info p {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-container>h1 {
+        font-size: 2.5rem;
+    }
+}

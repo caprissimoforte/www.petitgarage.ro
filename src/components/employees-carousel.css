@@ -1,0 +1,71 @@
+.employees-carousel-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.employees-carousel-container>h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.employees-carousel {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    overflow: hidden;
+}
+
+.employee {
+    position: relative;
+    display: flex;
+    min-width: 256px;
+    width: 25%;
+    max-width: 512px;
+    height: auto;
+    transition: 0.25s transform, 0.25s right;
+}
+
+.employee.standout {
+    z-index: 300;
+}
+
+.employee.standout>.person-card {
+    transform: scale(1);
+}
+
+.employee>.person-card {
+    transform: scale(0.75);
+}
+
+.employee-arrow {
+    position: absolute;
+    bottom: calc(50% - 32px);
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+    min-height: 64px;
+    cursor: pointer;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    .employees-carousel-container>h1 {
+        font-size: 4rem;
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 768px) {
+    .employees-carousel-container>h1 {
+        font-size: 2.5rem;
+    }
+}

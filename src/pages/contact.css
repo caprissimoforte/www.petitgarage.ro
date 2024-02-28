@@ -1,0 +1,22 @@
+.contact_main {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_main .details-wrapper{
+    box-sizing: border-box;
+    padding: 5vmin 0px 5vmin 0px;
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    .contact_main .map-wrapper {
+        width: 50%;
+    }
+}

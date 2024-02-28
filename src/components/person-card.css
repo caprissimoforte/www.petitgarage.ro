@@ -1,0 +1,51 @@
+.person-card {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 32px 8px;
+    flex-direction: column;
+    gap: 16px;
+    transition: 0.25s all;
+}
+
+.person-image {
+    border-radius: 32px;
+}
+
+.person-card * {
+    margin: 0;
+    padding: 0;
+}
+
+.person-textinfo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    .person-textinfo h1 {
+        font-size: 2.5rem;
+    }
+
+    .person-textinfo p {
+        font-size: 1.5rem;
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 768px) {
+    .person-textinfo h1 {
+        font-size: 2rem;
+    }
+
+    .person-textinfo p {
+        font-size: 1.25rem;
+    }
+}

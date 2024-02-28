@@ -1,0 +1,69 @@
+#root {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+p, a, select, option, input, textarea {
+    font-family: 'Noto sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+    font-family: 'Saira', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+main>* {
+    width: 100%;
+    max-width: 100%;
+}
+
+footer {
+    overflow: hidden;
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 768px) {
+    main {
+        max-width: 1920px;
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 768px) {
+}
