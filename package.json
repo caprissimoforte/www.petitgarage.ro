@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "BASENAME=/home2/petitgar/www/petitgarage.ro EMAILSERVICEID=gmailtest EMAILTEMPLATEID=testtemplate EMAILPUBKEY=zBKJE1iL-sjeoGhsI react-scripts build",
+    "build": "BASENAME=/home2/petitgar/public_html/petitgarage.ro EMAILSERVICEID=gmailtest EMAILTEMPLATEID=testtemplate EMAILPUBKEY=zBKJE1iL-sjeoGhsI react-scripts build",
     "nginxlocal": "sudo rm -rf /var/www/caprissimo.net && npm run build && sudo mv build /var/www/caprissimo.net",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
