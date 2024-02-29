@@ -33,7 +33,9 @@ export const ro = {
     employee_cto: "Director tehnic",
     employee_cfo: "Șef birou facturare",
     employee_coo: "Director administrativ",
-    employee_car_damage: "Șef departament daune",
+    employee_car_damage: "Director departament daune",
+    employee_marketer: "Specialist marketing",
+    employee_accountant: "Contabil",
     employee_mechanic: "Mecanic",
     employee_bodyworks: "Tinichigiu",
 

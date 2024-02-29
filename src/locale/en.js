@@ -30,6 +30,8 @@ export const en = {
     employee_cfo: "Chief Financial Officer",
     employee_coo: "Director administrativ",
     employee_car_damage: "Car damages manager",
+    employee_marketer: "Marketing specialist",
+    employee_accountant: "Accountant",
     employee_mechanic: "Mechanic",
     employee_bodyworks: "Bodyworks specialist",
 

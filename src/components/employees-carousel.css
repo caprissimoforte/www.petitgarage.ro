@@ -30,7 +30,7 @@
     width: 25%;
     max-width: 512px;
     height: auto;
-    transition: 0.25s transform, 0.25s right;
+    transition: 0.25s transform, 0.25s right, 0.25s opacity;
 }
 
 .employee.standout {

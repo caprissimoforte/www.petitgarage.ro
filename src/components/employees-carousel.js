@@ -5,7 +5,9 @@ import PersonCard from "./person-card.js";
 import { useLocale, useTranslation } from "../module/i18n.js";
 
 /* Employees */
+import EmployeeAlexandraEnache from "../assets/Alexandra_Enache.jpg";
 import EmployeeAntonioTrifan from "../assets/Antonio_Trifan.jpeg";
+import EmployeeBeatrisDutu from "../assets/Beatris_Dutu.jpg";
 import EmployeeBogdanCeausu from "../assets/Bogdan_Ceausu.png";
 import EmployeeBogdanMeret from "../assets/Bogdan_Meret.jpg";
 import EmployeeCameliaDraghiciu from "../assets/Camelia_Draghiciu.png";
@@ -25,9 +27,11 @@ export function EmployeesCarousel() {
         <PersonCard image={EmployeeBogdanMeret} name="Bogdan" surname="Mereț" title={translate(locale, "employee_coo")} />,
         <PersonCard image={EmployeeTiberiuEnache} name="Tiberiu" surname="Enache" title={translate(locale, "employee_car_damage")} />,
         <PersonCard image={EmployeeCameliaDraghiciu} name="Camelia" surname="Draghiciu" title={translate(locale, "employee_cfo")} />,
+        <PersonCard image={EmployeeAlexandraEnache} name="Alexandra" surname="Enache" title={translate(locale, "employee_marketer")} />,
+        <PersonCard image={EmployeeBeatrisDutu} name="Beatris" surname="Duțu" title={translate(locale, "employee_accountant")} />,
         <PersonCard image={EmployeeAntonioTrifan} name="Antonio" surname="Trifan" title={translate(locale, "employee_mechanic")} />,
         <PersonCard image={EmployeeBogdanCeausu} name="Bogdan" surname="Ceaușu" title={translate(locale, "employee_bodyworks")} />,
-        <PersonCard image={EmployeeMadalinStefan} name="Madalin" surname="Stefan" title={translate(locale, "employee_mechanic")} />,
+        <PersonCard image={EmployeeMadalinStefan} name="Madalin" surname="Stefan" title={translate(locale, "employee_bodyworks")} />,
     ];
 
 
@@ -72,16 +76,17 @@ export function EmployeesCarousel() {
                 k -= count;
             }
 
-            const leftmargin = (i - index + start_index + (count/4)) % count;
-            const rightmargin = (index - i + start_index + (count/4)) % count;
+            // another day another hack, mess around with these values when the carousel breaks from changing the employees
+            const leftmargin = (i - index + start_index + count/2) % count;
+            const rightmargin = (index - i + start_index + count/2) % count;
 
-            if (leftmargin === count/2 - 1 || leftmargin === count/2 - 2) {
+            if (leftmargin === count/2 || leftmargin === count/2 - 1) {
                 node.style.opacity = "0";
                 node.onclick = () => {
                     return false;
                 }
             }
-            else if (rightmargin === count/2 - 1 || rightmargin === count/2 - 2) {
+            else if (rightmargin === count/2 || rightmargin === count/2 - 1) {
                 node.style.opacity = "0";
                 node.onclick = () => {
                     return false;
