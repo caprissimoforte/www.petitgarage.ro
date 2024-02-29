@@ -6,17 +6,31 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-}
-
-.contact_main .details-wrapper{
-    box-sizing: border-box;
-    padding: 5vmin 0px 5vmin 0px;
 }
 
 /*  Desktop  */
 @media only screen and (min-width: 768px) {
+    .contact_main {
+        gap: 32px;
+        min-height: calc(100vh - 96px);
+        height: auto;
+    }
+
+    .contact_main .map-wrapper, .contact_main .details-wrapper {
+        width: calc(50% - 16px);
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 768px) {
     .contact_main .map-wrapper {
-        width: 50%;
+        width: 100%;
+        height: calc(100vh - 64px);
+    }
+
+    .contact_main .details-wrapper {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
     }
 }

@@ -29,11 +29,24 @@ function ContactDetails() {
                     <a href="mailto:sev.service@swiso.ro">sef.service@swiso.ro</a>
                 </span>
 
-                <CallToActionButton route={`/${locale}/contact/form`}>
-                    {translate(locale, "contact_seeform")}
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="#fff" d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-                </CallToActionButton>
+                <span className="span-detail">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M80-120v-720h400v160h400v560H80Zm80-80h240v-80H160v80Zm0-160h240v-80H160v80Zm0-160h240v-80H160v80Zm0-160h240v-80H160v80Zm320 480h320v-400H480v400Zm80-240v-80h160v80H560Zm0 160v-80h160v80H560Z"/></svg>
+                    <a href="https://www.swiso.ro/">{translate(locale, "contact_extra_flavour")}</a>
+                </span>
+                <span className="span-detail">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-80v-800l60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60v800l-60-60-60 60-60-60-60 60-60-60-60 60-60-60-60 60-60-60-60 60-60-60-60 60Zm120-200h480v-80H240v80Zm0-160h480v-80H240v80Zm0-160h480v-80H240v80Zm-40 404h560v-568H200v568Zm0-568v568-568Z"/></svg>
+                    <p>{translate(locale, "contact_extra_contact")}</p>
+                </span>
+                <span className="span-detail">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-280v-280h80v280h-80Zm240 0v-280h80v280h-80ZM80-120v-80h800v80H80Zm600-160v-280h80v280h-80ZM80-640v-80l400-200 400 200v80H80Zm178-80h444-444Zm0 0h444L480-830 258-720Z"/></svg>
+                    <p>{translate(locale, "contact_extra_bank")}</p>
+                </span>
             </div>
+
+            <CallToActionButton route={`/${locale}/contact/form`}>
+                {translate(locale, "contact_seeform")}
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="#fff" d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+            </CallToActionButton>
         </div>
     );
 }

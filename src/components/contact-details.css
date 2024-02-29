@@ -1,6 +1,7 @@
 .details-wrapper {
     justify-content: center;
     align-items: center;
+    gap: 32px;
 }
 
 .contact-details {
@@ -37,11 +38,6 @@
 @media only screen and (min-width: 768px) {
     .contact-details {
         gap: 32px;
-    }
-    
-    .details-wrapper {
-        width: 50%;
-        height: 100%;
     }
 
     .span-detail {
