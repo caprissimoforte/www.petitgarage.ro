@@ -45,36 +45,36 @@ function Services() {
         <main className="services_main">
             <div className="services">
 
-                <ServiceSpan id="car-damage" image={AsistentaDauneImg} title={translate(locale, "services_car_damage")}>
+                <ServiceSpan id="car-damage" image={AsistentaDauneImg} loading="eager" title={translate(locale, "services_car_damage")}>
                     {translate(locale, "services_car_damage_info")}
                     <Insurers />
                 </ServiceSpan>
 
-                <ServiceSpan id="air-conditioning" image={ClimatizareImg} title={translate(locale, "services_air_conditioning")}>
+                <ServiceSpan id="air-conditioning" image={ClimatizareImg} loading="lazy" title={translate(locale, "services_air_conditioning")}>
                     <p>{translate(locale, "services_air_conditioning_info")}</p>
                 </ServiceSpan>
 
-                <ServiceSpan id="mechanics" image={MecanicaImg} title={translate(locale, "services_mechanics")}>
+                <ServiceSpan id="mechanics" image={MecanicaImg} loading="lazy" title={translate(locale, "services_mechanics")}>
                     <p>{translate(locale, "services_mechanics_info")}</p>
                 </ServiceSpan>
 
-                <ServiceSpan id="tinware" image={TinichigerieImg} title={translate(locale, "services_tinware")}>
+                <ServiceSpan id="tinware" image={TinichigerieImg} loading="lazy" title={translate(locale, "services_tinware")}>
                     <p>{translate(locale, "services_tinware_info")}</p>
                 </ServiceSpan>
 
-                <ServiceSpan id="wheel-geometry" image={GeometrieRotiImg} title={translate(locale, "services_wheel_geometry")}>
+                <ServiceSpan id="wheel-geometry" image={GeometrieRotiImg} loading="lazy" title={translate(locale, "services_wheel_geometry")}>
                     <p>{translate(locale, "services_wheel_geometry_info")}</p>
                 </ServiceSpan>
 
-                <ServiceSpan id="paint-shop" image={VopsitorieImg} title={translate(locale, "services_paint_shop")}>
+                <ServiceSpan id="paint-shop" image={VopsitorieImg} loading="lazy" title={translate(locale, "services_paint_shop")}>
                     <p>{translate(locale, "services_paint_shop_info")}</p>
                 </ServiceSpan>
 
-                <ServiceSpan id="headlights" image={PolimerizareFaruriImg} title={translate(locale, "services_headlights")}>
+                <ServiceSpan id="headlights" image={PolimerizareFaruriImg} loading="lazy" title={translate(locale, "services_headlights")}>
                     <p>{translate(locale, "services_headlights_info")}</p>
                 </ServiceSpan>
 
-                <ServiceSpan id="computerized-test" image={TestareComputerizataImg } title={translate(locale, "services_computerized_test")}>
+                <ServiceSpan id="computerized-test" image={TestareComputerizataImg } loading="lazy" title={translate(locale, "services_computerized_test")}>
                     <p>{translate(locale, "services_computerized_test_info")}</p>
                 </ServiceSpan>
 

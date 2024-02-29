@@ -13,14 +13,23 @@ import showcaseimg1 from "../assets/42.png";
 
 /* Hero slideshow images */
 import LandingImg from "../assets/37.png";
+import LandingImgMobile from "../assets/37-mobile.png";
 import AsistentaDauneImg from "../assets/28.png";
+import AsistentaDauneImgMobile from "../assets/28-mobile.png";
 import ClimatizareImg from "../assets/32.png";
+import ClimatizareImgMobile from "../assets/32-mobile.png";
 import MecanicaImg from "../assets/13.png";
+import MecanicaImgMobile from "../assets/13-mobile.png";
 import TinichigerieImg from "../assets/21.png";
+import TinichigerieImgMobile from "../assets/21-mobile.png";
 import PolimerizareFaruriImg from "../assets/43.png";
+import PolimerizareFaruriImgMobile from "../assets/43-mobile.png";
 import GeometrieRotiImg from "../assets/38.png";
+import GeometrieRotiImgMobile from "../assets/38-mobile.png";
 import VopsitorieImg from "../assets/30.png";
+import VopsitorieImgMobile from "../assets/30-mobile.png";
 import TestareComputerizataImg from "../assets/40.png";
+import TestareComputerizataImgMobile from "../assets/40-mobile.png";
 
 /* Testimonials */
 import TestimonialImg1 from "../assets/18.png";
@@ -32,6 +41,8 @@ import CTACardImg from "../assets/35.png";
 function Landing() {
     const locale = useLocale();
     const translate = useTranslation();
+
+    const isMobile = window.matchMedia("(max-width: 768px)");
 
     const images = [
         {
@@ -49,63 +60,63 @@ function Landing() {
                     </CallToActionButton>
                 </div>
                 </>,
-            image: LandingImg,
+            image: isMobile ? LandingImgMobile : LandingImg,
             bgpos: "center",
         },
         {
             children:
                 <h1>{translate(locale, "services_car_damage").toUpperCase()}</h1>,
-            image: AsistentaDauneImg,
+            image: isMobile ? AsistentaDauneImgMobile : AsistentaDauneImg,
             bgpos: "center",
             align: "flex-start",
         },
         {
             children:
                 <h1>{translate(locale, "services_air_conditioning").toUpperCase()}</h1>,
-            image: ClimatizareImg,
-            bgpos: "top center",
+            image: isMobile ? ClimatizareImgMobile : ClimatizareImg,
+            bgpos: isMobile ? "center" : "top center",
         },
         {
             children:
                 <h1>{translate(locale, "services_mechanics").toUpperCase()}</h1>,
-            image: MecanicaImg,
-            bgpos: "35% center",
+            image: isMobile ? MecanicaImgMobile : MecanicaImg,
+            bgpos: isMobile ? "center" : "35% center",
             align: "flex-end",
         },
         {
             children:
                 <h1>{translate(locale, "services_tinware").toUpperCase()}</h1>,
-            image: TinichigerieImg,
+            image: isMobile ? TinichigerieImgMobile : TinichigerieImg,
             bgpos: "center",
         },
         {
             children:
                 <h1>{translate(locale, "services_headlights").toUpperCase()}</h1>,
-            image: PolimerizareFaruriImg,
-            bgpos: "35% center",
+            image: isMobile ? PolimerizareFaruriImgMobile : PolimerizareFaruriImg,
+            bgpos: isMobile ? "center" : "35% center",
             align: "flex-end",
-            down: "25%",
+            down: isMobile ? "initial" : "25%",
         },
         {
             children:
                 <h1>{translate(locale, "services_wheel_geometry").toUpperCase()}</h1>,
-            image: GeometrieRotiImg,
-            bgpos: "40% center",
-            up: "25%",
+            image: isMobile ? GeometrieRotiImgMobile : GeometrieRotiImg,
+            bgpos: isMobile ? "center" : "40% center",
+            up: isMobile ? "initial" : "25%",
         },
         {
             children:
                 <h1>{translate(locale, "services_paint_shop").toUpperCase()}</h1>,
-            image: VopsitorieImg,
-            bgpos: "55% center",
+            image: isMobile ? VopsitorieImgMobile : VopsitorieImg,
+            bgpos: isMobile ? "center" : "55% center",
         },
         {
             children:
                 <h1>{translate(locale, "services_computerized_test").toUpperCase()}</h1>,
-            image: TestareComputerizataImg,
+            image: isMobile ? TestareComputerizataImgMobile : TestareComputerizataImg,
             bgpos: "center",
             align: "flex-end",
-            down: "25%",
+            down: isMobile ? "initial" : "25%",
         },
     ];
 

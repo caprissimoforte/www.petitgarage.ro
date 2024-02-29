@@ -9,6 +9,9 @@ export const ro = {
     contact_heading: "Vă stăm la dispoziție!",
     contact_location: "Ploiești, str. Sondelor, nr. 66, Jud. Prahova.",
     contact_seeform: <p>Vezi formularul</p>,
+    contact_extra_flavour: "Petit Garage este un service auto ce face parte din Swiso Impex.",
+    contact_extra_contact: "Cont: RO11BACX0000002454534000",
+    contact_extra_bank: "Bancă: UNICREDIT BANK SA",
 
     missing_errormsg: "Ne pare rău dar nu am putut găsi pagina",
 
@@ -33,12 +36,11 @@ export const ro = {
     employee_cto: "Director tehnic",
     employee_cfo: "Șef birou facturare",
     employee_coo: "Director administrativ",
-    employee_car_damage: "Director departament daune",
+    employee_car_damage: "Șef departament daune",
     employee_marketer: "Specialist marketing",
     employee_accountant: "Contabil",
     employee_mechanic: "Mecanic",
     employee_bodyworks: "Tinichigiu",
-
 
     services_card_1_title: "Flexibilitate și versatilitate",
     services_card_1_text: "Petit Garage înțelege perfect problema clienților referitoare la blocarea autovehiculelor în service, motiv pentru care efectuăm servicii calitative, pliate pe necesitățile clientului, asigurându-vă în același timp că lucrăm intens la finalizarea lucrărilor în cel mai scurt timp.",
@@ -50,31 +52,33 @@ export const ro = {
     services_car_damage: "Centru constatare daune",
     services_car_damage_info:
         <div style={{gap: "16px"}}>
-            <p>Vă oferim asistență specializată în reparații auto, cu ajutorul unor soluții rapide și eficiente pentru mașinile accidentate. Beneficiați de servicii premium și gestionare simplificată a daunelor. Precum:</p>
+            <p>Vă oferim asistență și reparații specializate cu ajutorul unor soluții rapide și eficiente pentru mașinile accidentate. Dacă apelați la noi puteți beneficia de servicii gratuite precum:</p>
             <ul style={{textAlign: "left"}}>
-                <li><p>Primirea unui autovehicul la schimb pe toată durata reparațiilor- GRATUIT</p></li>
-                <li><p>Întocmirea dosarului de daună</p></li>
-                <li><p>Gestionarea dosarului de daună</p></li>
-                <li><p>Promptitudinea oferită de echipa noastră de specialiști în privința reparațiilor</p></li>
-                <li><p>După terminarea reparațiilor vă puteți ridica autovehiculul fără să așteptați ca firma de asigurari să plătească service-ul.</p></li>
+                <li><p>Asistență în întocmirea dosarului de daună;</p></li>
+                <li><p>Gestionare dosar în raport cu societatea de asigurări în cauză;</p></li>
+                <li><p>Primirea unui autovehicul la schimb pe toată durata reparațiilor;</p></li>
+                <li><p>Transportul asigurat pentru mașinile nedeplasabile;</p></li>
+                <li><p>După terminarea reparațiilor vă puteți ridica autovehiculul fără să așteptați ca firma de asigurari să plătească service-ul;</p></li>
+                <li><p>Promptitudinea oferită de echipa noastră de specialiști în privința reparațiilor;</p></li>
             </ul>
+            <p>Această ofertă este valabilă numai dacă societatea noastră se va ocupa de reparațiile mașinii!</p>
             <p>Contactați-ne acum pentru mai multe detalii la numărul de telefon +40762203320!</p>
-            <p>Reparăm autovehicule care au asigurări la toate dintre următoarele firme : Omniasig, Groupama, Axeria, Grawe, Generali, Allianz, Allianz Țiriac, Asirom, Uniqa, Recrex.</p>
+            <p>Reparăm autovehicule care au asigurări la toate dintre următoarele firme: Omniasig, Groupama, Axeria, Grawe, Generali, Allianz, Allianz Țiriac, Asirom, Uniqa, Recrex.</p>
         </div>,
     services_air_conditioning: "Climatizare auto",
-    services_air_conditioning_info: "Petit Garage oferă acum servicii complete de verificare și încărcare cu freon pentru sistemele de aer condiționat ale mașinilor. Noi am achiziționat cel mai performant aparat de diagnosticare și încărcare freon auto de la Texa - TEXA KONFORT 707R Off Road, care poate trata atât freonul standard R134A, cât și noul agent frigorific ecologic R1234YF.",
+    services_air_conditioning_info: "Petit Garage oferă acum servicii complete de verificare și încărcare cu freon pentru sistemele de aer condiționat ale mașinilor. Noi am achiziționat aparate performante de diagnosticare și încărcare freon auto de la Texa - TEXA KONFORT 707R și 705R Off Road, care poate trata atât freonul standard R134A, cât și noul agent frigorific ecologic R1234YF.",
     services_mechanics: "Mecanică",
-    services_mechanics_info: "Petit Garage oferă reparații auto profesionale pentru toate tipurile de mașini. Echipa noastră de mecanici experimentați asigură servicii de înaltă calitate, folosind echipamente moderne și tehnici avansate. Indiferent de problema mașinii dumneavoastră, suntem aici să vă ajutăm rapid și eficient. Contactați-ne acum pentru soluții personalizate și fiabile pentru nevoile dvs.",
+    services_mechanics_info: "Petit Garage oferă reparații auto profesionale pentru toate tipurile de mașini. Echipa noastră de mecanici experimentați asigură servicii de înaltă calitate. Indiferent de problema mașinii dumneavoastră, suntem aici să vă ajutăm rapid și eficient. Contactați-ne acum pentru soluții personalizate și fiabile pentru nevoile dvs.",
     services_tinware: "Tinichigerie",
-    services_tinware_info: "Furnizăm servicii profesionale de reparare a caroseriei auto în Ploiești. Echipa noastră folosește tehnici avansate și echipamente moderne pentru a reface aspectul original al mașinii dvs. Suntem aici să vă oferim soluții personalizate și rezultate excelente. Contactați-ne acum pentru servicii de reparație auto de înaltă calitate.",
+    services_tinware_info: "Furnizăm servicii profesionale de reparare a caroseriei auto în Ploiești. Echipa noastră folosește echipamente moderne pentru a reface aspectul original al mașinii dvs. Suntem aici să vă oferim soluții personalizate și rezultate excelente. Contactați-ne acum pentru servicii de reparație auto de înaltă calitate.",
     services_wheel_geometry: "Geometrie roți 3D",
     services_wheel_geometry_info: "Geometria corectă a roților este esențială pentru stabilitatea și siguranța mașinii dumneavoastră. Roțile nealinate pot cauza uzură inegală a anvelopelor, scurtându-le durata de viață și generând costuri suplimentare pentru înlocuire. De asemenea, o aliniere incorectă poate afecta manevrabilitatea, determinând uzură prematură a suspensiei și direcției.",
     services_paint_shop: "Vopsitorie",
-    services_paint_shop_info: "Petit Garage oferă expertiză în vopsirea vehiculelor. Personalul nostru utilizează metode avansate și substanțe premium pentru a reda aspectul autovehiculului dvs. Indiferent de complexitatea sau tipul intervenției, vă asigurăm un rezultat impecabil. Luați legătura cu noi acum pentru a conferi mașinii dvs. un aspect deosebit pe șosea.",
+    services_paint_shop_info: "Personalul nostru utilizează metode avansate și substanțe premium pentru a reda aspectul autovehiculului dvs. Indiferent de complexitatea sau tipul intervenției, vă asigurăm un rezultat impecabil. Luați legătura cu noi acum pentru a conferi mașinii dvs. un aspect deosebit pe șosea.",
     services_headlights: "Polimerizare faruri",
     services_headlights_info: "Polimerizarea farurilor este un proces de curățare și restaurare a farurilor de pe mașină. Farurile de plastic se pot înnora sau îngălbeni din cauza expunerii la soare și condițiile meteo. Acest proces implică aplicarea unei soluții chimice pentru a îndepărta depunerile și imperfecțiunile, urmată de lustruire și sigilare pentru a preveni deteriorarea ulterioară. Astfel, se îmbunătățește vizibilitatea și aspectul mașinii.",
     services_computerized_test: "Testare computerizată",
-    services_computerized_test_info: "Cu testarea computerizată, mașina ta e evaluată precis și detaliat, fără ghiciri sau presupuneri. Problemele sunt identificate rapid și în mod corect cu ajutorul aparatului “Launch” și al echipei noastre specializat. Putem verifica codurile de eroare pe toate sistemele autovehiculului dvs. Nu ezita să faci o programare în service-ul nostru și lasă-ne să ne ocupăm de mașina ta cu cea mai mare grijă și profesionalism!",
+    services_computerized_test_info: "Cu testarea computerizată, mașina ta e evaluată precis și detaliat, fără ghiciri sau presupuneri. Problemele sunt identificate rapid și în mod corect cu ajutorul aparatului \"Launch\" și al echipei noastre specializate. Putem verifica codurile de eroare pe toate sistemele autovehiculului dvs. Nu ezitați să faceți o programare în service-ul nostru și lăsați-ne să ne ocupăm de mașina dvs. cu cea mai mare grijă și profesionalism!",
 
     form_failurealert: "Am întâmpinat o problema trimițând formularul! Vă rugăm să încercați mai târziu!",
     form_placeholder_brand: "Marcă",

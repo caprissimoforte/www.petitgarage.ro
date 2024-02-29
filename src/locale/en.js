@@ -9,6 +9,9 @@ export const en = {
     contact_heading: "We're at your service!",
     contact_location: "Ploiești, str. Sondelor, nr. 66, Jud. Prahova.",
     contact_seeform: <p>See the form</p>,
+    contact_extra_flavour: "Petit Garage is an auto service that is part of Swiso Impex.",
+    contact_extra_contact: "Contact: RO11BACX0000002454534000",
+    contact_extra_bank: "Bank: UNICREDIT BANK SA",
 
     missing_errormsg: "We're sorry but we couldn't find that page",
 
@@ -45,15 +48,17 @@ export const en = {
     services_car_damage: "Car damage assistance",
     services_car_damage_info:
         <div style={{gap: "16px"}}>
-            <p>We offer specialized assistance in auto repairs, providing quick and efficient solutions for damaged vehicles. Benefit from premium services and simplified claims management. Such as:</p>
+            <p>We offer assistance and specialized repairs using quick and efficient solutions for damaged cars. If you choose us, you can benefit from free services such as:</p>
             <ul style={{textAlign: "left"}}>
-                <li><p>Receiving a replacement vehicle for the entire repair duration - FREE</p></li>
-                <li><p>Preparing the claim file</p></li>
-                <li><p>Managing the claim file</p></li>
-                <li><p>Promptness provided by our team of specialists regarding repairs</p></li>
-                <li><p>After completing the repairs, you can lift your vehicle without waiting for the insurance company to pay for the service.</p></li>
+                <li><p>Assistance in preparing the claim file;</p></li>
+                <li><p>Managing the file in relation to the insurance company involved;</p></li>
+                <li><p>Receiving a replacement vehicle for the entire duration of the repairs;</p></li>
+                <li><p>Transport provided for immobile vehicles;</p></li>
+                <li><p>After the repairs are completed, you can pick up your vehicle without waiting for the insurance company to pay the service back;</p></li>
+                <li><p>The promptness provided by our team of specialists regarding repairs;</p></li>
             </ul>
-            <p>Contact us now for more details at the phone number +40762203320!</p>
+            <p>This offer is valid only if our company handles the repairs of your car!</p>
+            <p>Contact us now for more details at phone number +40762203320!</p>
             <p>We repair vehicles insured by any of the following companies: Omniasig, Groupama, Axeria, Grawe, Generali, Allianz, Allianz Țiriac, Asirom, Uniqa, Recrex.</p>
         </div>,
     services_air_conditioning: "Air conditioning",
@@ -69,7 +74,7 @@ export const en = {
     services_headlights: "Headlight polymerization",
     services_headlights_info: "Headlight polymerization is a process of cleaning and refurbishing the headlights of a car. Plastic headlights can become cloudy or yellowed due to exposure to sunlight and weather conditions. This process involves applying a chemical solution to remove deposits and imperfections, followed by polishing and sealing to prevent further damage. This improves the visibility and appearance of the car.",
     services_computerized_test: "Computerized car testing",
-    services_computerized_test_info: "With computerized testing, your car is evaluated precisely and in detail, without guesswork or assumptions. Problems are identified quickly and accurately with the help of the \"Launch\" device and our specialized team. We can check error codes on all systems of your vehicle. Don't hesitate to schedule an appointment at our service and let us take care of your car with the utmost care and professionalism!",
+    services_computerized_test_info: "With computerized testing, your car is precisely and thoroughly evaluated, without guesswork or assumptions. Problems are quickly and accurately identified with the help of the \"Launch\" device and our specialized team. We can check error codes on all your vehicle's systems. Don't hesitate to schedule an appointment at our service center and let us take care of your car with the utmost care and professionalism!",
 
     form_failurealert: "An error has occured while sending the form. Please try again later!",
     form_placeholder_brand: "Brand",
