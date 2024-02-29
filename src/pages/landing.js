@@ -1,5 +1,6 @@
 import "./landing.css";
 
+import { useState, useEffect } from "react";
 import { useLocale, useTranslation, usePath } from "../module/i18n.js";
 
 import Hero from "../components/hero.js";
@@ -39,10 +40,14 @@ import TestimonialImg3 from "../assets/36.png";
 import CTACardImg from "../assets/35.png";
 
 function Landing() {
+    const [isMobile, setIsMobile] = useState(false);
     const locale = useLocale();
     const translate = useTranslation();
 
-    const isMobile = window.matchMedia("(max-width: 768px)");
+    useEffect(() => {
+        const matches = window.matchMedia("(max-width: 768px)").matches;
+        setIsMobile(matches);
+    });
 
     const images = [
         {
