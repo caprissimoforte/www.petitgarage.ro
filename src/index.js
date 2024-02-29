@@ -30,10 +30,11 @@ import TermsAndConditions from "./pages/terms.js";
 import Missing from "./pages/missing.js";
 import ThankYou from "./pages/thankyou.js";
 
-const basename = process.env.BASENAME;
-const emailserviceid = process.env.EMAILSERVICEID;
-const emailtemplateid = process.env.EMAILTEMPLATEID;
-const publickey = process.env.EMAILPUBKEY;
+/* CHANGE THESE FOR PRODUCTION */
+const basename = "/home2/petitgar/public_html";
+const emailserviceid = "gmailtest";
+const emailtemplateid = "testtemplate";
+const publickey = "zBKJE1iL-sjeoGhsI";
 
 function makeLocalePath(locale) {
     const result = {
