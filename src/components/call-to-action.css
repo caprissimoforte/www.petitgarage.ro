@@ -1,13 +1,14 @@
 .cta {
     display: flex;
+    max-width: 100%;
     box-sizing: border-box;
     padding: 4% 8%;
     flex-direction: row;
-    text-wrap: nowrap;
     column-gap: 0px;
     justify-content: center;
     align-items: center;
     background: red;
+    text-wrap: pretty;
     text-decoration: none;
     color: white;
     border: none;
