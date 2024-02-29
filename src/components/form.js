@@ -7,7 +7,7 @@ import { useLocale, useTranslation } from "../module/i18n.js";
 import { useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 
-const regex_tel = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+const regex_tel = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 const regex_email = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 export function ServiceForm({ children, emailserviceid, emailtemplateid, publickey, formid, _next}) {

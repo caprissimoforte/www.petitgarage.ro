@@ -30,13 +30,10 @@ import TermsAndConditions from "./pages/terms.js";
 import Missing from "./pages/missing.js";
 import ThankYou from "./pages/thankyou.js";
 
-/* TODO: VERY IMPORTANT NEEDS TO BE CHANGED FOR PRODUCTION */
-const basename = "/var/www/caprissimo.net/";
-const emailserviceid = "gmailtest";
-const emailtemplateid = "testtemplate";
-const publickey = "zBKJE1iL-sjeoGhsI";
-
-
+const basename = process.env.BASENAME;
+const emailserviceid = process.env.EMAILSERVICEID;
+const emailtemplateid = process.env.EMAILTEMPLATEID;
+const publickey = process.env.PUBKEY;
 
 function makeLocalePath(locale) {
     const result = {

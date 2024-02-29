@@ -10,7 +10,7 @@ import { getLocaleName } from "../locale/locale.js";
 
 import bgimg from "../assets/garagelogo.png";
 
-const regex_tel = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+const regex_tel = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 const regex_email = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 function ContactForm({ formid, emailserviceid, emailtemplateid, publickey, _next}) {
