@@ -67,7 +67,7 @@ export function EmployeesCarousel() {
 
             let k = (index + 1 - start_index) % count;
             // adding 0.5 is a hack but i can't take it off now otherwise slideshow is off
-            let g = i - count + 0.5;
+            let g = i - count + 1.5;
 
             if (i > index + count/2) {
                 k += count;
