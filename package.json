@@ -1,6 +1,6 @@
 {
   "name": "www.petitgarage.ro",
-  "homepage": "https://www.caprissimo.net",
+  "homepage": "https://www.petitgarage.ro",
   "main": "src/index.js",
   "version": "0.1.0",
   "private": true,
@@ -19,10 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "ssl": "HTTPS=true SSL_CRT_FILE=/etc/ssl/caprissimo.net.pem SSL_KEY_FILE=/etc/ssl/caprissimo.net.key react-scripts start",
-    "https": "PORT=443 HTTPS=true SSL_CRT_FILE=/etc/ssl/caprissimo.net.pem SSL_KEY_FILE=/etc/ssl/caprissimo.net.key react-scripts start",
-    "build": "BASENAME=/var/www/caprissimo.net/ EMAILSERVICEID=gmailtest EMAILTEMPLATEID=testtemplate EMAILPUBKEY=zBKJE1iL-sjeoGhsI react-scripts build",
-    "nginxBuild": "sudo rm -rf /var/www/caprissimo.net && npm run build && sudo mv build /var/www/caprissimo.net",
+    "build": "BASENAME=/home2/petitgar/www/petitgarage.ro EMAILSERVICEID=gmailtest EMAILTEMPLATEID=testtemplate EMAILPUBKEY=zBKJE1iL-sjeoGhsI react-scripts build",
+    "nginxlocal": "sudo rm -rf /var/www/caprissimo.net && npm run build && sudo mv build /var/www/caprissimo.net",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
