@@ -33,7 +33,7 @@ import ThankYou from "./pages/thankyou.js";
 const basename = process.env.BASENAME;
 const emailserviceid = process.env.EMAILSERVICEID;
 const emailtemplateid = process.env.EMAILTEMPLATEID;
-const publickey = process.env.PUBKEY;
+const publickey = process.env.EMAILPUBKEY;
 
 function makeLocalePath(locale) {
     const result = {
