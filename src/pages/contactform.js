@@ -159,7 +159,7 @@ function ContactForm({ formid, emailserviceid, emailtemplateid, publickey, _next
 
         event.preventDefault();
         emailjs
-            .sendForm(emailserviceid, emailtemplateid, document.getElementById(formid), {
+            .sendForm(emailserviceid, val === "Centru constatare daune" ? "tibitemplate" : emailtemplateid, document.getElementById(formid), {
                 publicKey: publickey,
             })
             .then(

@@ -32,9 +32,9 @@ import ThankYou from "./pages/thankyou.js";
 
 /* CHANGE THESE FOR PRODUCTION */
 const basename = "/home2/petitgar/public_html";
-const emailserviceid = "gmailtest";
-const emailtemplateid = "testtemplate";
-const publickey = "zBKJE1iL-sjeoGhsI";
+const emailserviceid = "noreplypetitgarage";
+const emailtemplateid = "defaulttemplate";
+const publickey = "rMCTq9VCIhg9B7sRx";
 
 function makeLocalePath(locale) {
     const result = {
@@ -92,7 +92,7 @@ function makeLocalePath(locale) {
                                 path: `/${locale}/services/car-damage`,
                                 element:
                                 <Service id="car_damage">
-                                    <ServiceForm formid="car-damage-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} _next={`/${locale}/thankyou`}>
+                                    <ServiceForm formid="car-damage-form" emailserviceid={emailserviceid} emailtemplateid="tibitemplate" publickey={publickey} _next={`/${locale}/thankyou`}>
                                         <input type="hidden" name="service" value="Asistență daune auto" />
                                     </ServiceForm>
                                 </Service>,
