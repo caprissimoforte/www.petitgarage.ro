@@ -40,14 +40,9 @@ import TestimonialImg3 from "../assets/36.png";
 import CTACardImg from "../assets/35.png";
 
 function Landing() {
-    const [isMobile, setIsMobile] = useState(false);
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
     const locale = useLocale();
     const translate = useTranslation();
-
-    useEffect(() => {
-        const matches = window.matchMedia("(max-width: 768px)").matches;
-        setIsMobile(matches);
-    });
 
     const images = [
         {
