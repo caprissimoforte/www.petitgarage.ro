@@ -40,16 +40,25 @@
 @media only screen and (min-width: 768px) {
     .testimonial-wrapper {
         width: 35%;
-        height: 15vmin;
+        /*
+        height: 15vh;
         max-height: 512px;
+        */
+        /*height: clamp(384px, 15vmax, 640px);*/
+        height: 640px;
     }
 
     .testimonial-children {
-        padding: 5vmin;
+        padding: 5%;
     }
 
     .testimonial-children h1 {
-        font-size: 3rem;
+        /*font-size: 3rem;*/
+        font-size: 48px;
+    }
+
+    .testimonial-children h1 {
+        font-size: 32px;
     }
 }
 
