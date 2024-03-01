@@ -37,7 +37,7 @@
 
 
 /*  Desktop  */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .contact-details {
         gap: 32px;
     }
@@ -61,7 +61,7 @@
 }
 
 /*  Mobile  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .map-wrapper, .details-wrapper {
         width: 100%;
         height: auto;

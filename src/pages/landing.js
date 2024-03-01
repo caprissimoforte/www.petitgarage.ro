@@ -40,7 +40,7 @@ import TestimonialImg3 from "../assets/36.png";
 import CTACardImg from "../assets/35.png";
 
 function Landing() {
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    const isMobile = window.matchMedia("(max-width: 1024px)").matches;
     const locale = useLocale();
     const translate = useTranslation();
 

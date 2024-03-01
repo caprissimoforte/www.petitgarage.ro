@@ -35,7 +35,7 @@
 }
 
 /*  Desktop  */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .feature-cards-container {
         display: table-row;
         border-spacing: 32px;
@@ -43,7 +43,7 @@
 }
 
 /*  Mobile  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .feature-cards-container {
         display: flex;
         flex-direction: row;

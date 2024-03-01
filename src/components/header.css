@@ -246,7 +246,7 @@ header p {
 }
 
 /*  Desktop  */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
     .hdr {
         height: 96px;
         padding: 8px 10% 8px 10%;
@@ -262,7 +262,7 @@ header p {
 }
 
 /*  Mobile  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .hdr {
         height: 64px;
         padding: 8px 5% 8px 5%;

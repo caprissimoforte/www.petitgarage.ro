@@ -58,12 +58,12 @@ footer {
 }
 
 /*  Desktop  */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     main {
         max-width: 1920px;
     }
 }
 
 /*  Mobile  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 }

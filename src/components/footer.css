@@ -76,14 +76,14 @@ footer a {
 }
 
 /*  Desktop  */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .footer_contact {
         padding: 5vmin;
     }
 }
 
 /*  Mobile  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     footer .map-wrapper {
         width: 100%;
     }

@@ -28,7 +28,7 @@
 }
 
 /*  Desktop  */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .contactform-children-wrapper {
         max-width: 1920px;
         min-height: 1080px;
@@ -40,12 +40,12 @@
 }
 
 /*  Mobile  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .contactform-children-wrapper {
        min-height: 100vh; 
     }
 
     .contactform-children {
-        width: 100%;
+        width: calc(100% - 4px);
     }
 }
