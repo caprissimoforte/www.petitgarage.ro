@@ -184,9 +184,9 @@ function ContactForm({ formid, emailserviceid, emailtemplateid, publickey, captc
                 (error) => {
                     console.log("Failed to send contact form...", error.text);
                     alert(translate(locale, "form_failurealert"));
+                    submit.disabled = false;
                 },
             );
-        submit.disabled = false;
     };
 
     const handleChange = event => {

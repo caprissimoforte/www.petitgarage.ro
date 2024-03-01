@@ -179,9 +179,9 @@ export function ServiceForm({ children, emailserviceid, emailtemplateid, publick
                 (error) => {
                     console.log("Failed to send contact form...", error.text);
                     alert(translate(locale, "form_failurealert"));
+                    submit.disabled = false;
                 },
             );
-        submit.disabled = false;
     };
 
     const date = new Date();
