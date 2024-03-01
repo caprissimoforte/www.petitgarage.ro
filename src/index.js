@@ -35,6 +35,7 @@ const basename = "/home2/petitgar/public_html";
 const emailserviceid = "noreplypetitgarage";
 const emailtemplateid = "defaulttemplate";
 const publickey = "rMCTq9VCIhg9B7sRx";
+const captchakey = "6LdCg4YpAAAAAGdU-NHdjH5DvbA3NIrtJimvbUAT";
 
 function makeLocalePath(locale) {
     const result = {
@@ -72,7 +73,7 @@ function makeLocalePath(locale) {
                             },
                             {
                                 path: `/${locale}/contact/form`,
-                                element: <ContactFormPage formid="contact-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} _next={`/${locale}/thankyou`}/>
+                                element: <ContactFormPage formid="contact-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} captchakey={captchakey} _next={`/${locale}/thankyou`}/>
                             },
                         ]
                     },
@@ -92,7 +93,7 @@ function makeLocalePath(locale) {
                                 path: `/${locale}/services/car-damage`,
                                 element:
                                 <Service id="car_damage">
-                                    <ServiceForm formid="car-damage-form" emailserviceid={emailserviceid} emailtemplateid="tibitemplate" publickey={publickey} _next={`/${locale}/thankyou`}>
+                                    <ServiceForm formid="car-damage-form" emailserviceid={emailserviceid} emailtemplateid="tibitemplate" publickey={publickey} captchakey={captchakey} _next={`/${locale}/thankyou`}>
                                         <input type="hidden" name="service" value="Asistență daune auto" />
                                     </ServiceForm>
                                 </Service>,
@@ -101,7 +102,7 @@ function makeLocalePath(locale) {
                                 path: `/${locale}/services/air-conditioning`,
                                 element:
                                 <Service id="air_conditioning">
-                                    <ServiceForm formid="air-conditioning-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} _next={`/${locale}/thankyou`}>
+                                    <ServiceForm formid="air-conditioning-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} captchakey={captchakey} _next={`/${locale}/thankyou`}>
                                         <input type="hidden" name="service" value="Climatizare auto" />
                                     </ServiceForm>
                                 </Service>,
@@ -110,7 +111,7 @@ function makeLocalePath(locale) {
                                 path: `/${locale}/services/tinware`,
                                 element:
                                 <Service id="tinware">
-                                    <ServiceForm formid="tinware-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} _next={`/${locale}/thankyou`}>
+                                    <ServiceForm formid="tinware-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} captchakey={captchakey} _next={`/${locale}/thankyou`}>
                                         <input type="hidden" name="service" value="Tinichigerie" />
                                     </ServiceForm>
                                 </Service>,
@@ -119,7 +120,7 @@ function makeLocalePath(locale) {
                                 path: `/${locale}/services/mechanics`,
                                 element:
                                 <Service id="mechanics">
-                                    <ServiceForm formid="mechanics-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} _next={`/${locale}/thankyou`}>
+                                    <ServiceForm formid="mechanics-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} captchakey={captchakey} _next={`/${locale}/thankyou`}>
                                         <input type="hidden" name="service" value="Mecanică" />
                                     </ServiceForm>
                                 </Service>,
@@ -128,7 +129,7 @@ function makeLocalePath(locale) {
                                 path: `/${locale}/services/wheel-geometry`,
                                 element:
                                 <Service id="wheel_geometry">
-                                    <ServiceForm formid="wheel-geometry-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} _next={`/${locale}/thankyou`}>
+                                    <ServiceForm formid="wheel-geometry-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} captchakey={captchakey} _next={`/${locale}/thankyou`}>
                                         <input type="hidden" name="service" value="Geometrie roți 3D" />
                                     </ServiceForm>
                                 </Service>,
@@ -137,7 +138,7 @@ function makeLocalePath(locale) {
                                 path: `/${locale}/services/paint-shop`,
                                 element:
                                 <Service id="paint_shop">
-                                    <ServiceForm formid="paint-shop-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} _next={`/${locale}/thankyou`}>
+                                    <ServiceForm formid="paint-shop-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} captchakey={captchakey} _next={`/${locale}/thankyou`}>
                                         <input type="hidden" name="service" value="Vopsitorie" />
                                     </ServiceForm>
                                 </Service>,
@@ -146,7 +147,7 @@ function makeLocalePath(locale) {
                                 path: `/${locale}/services/headlights`,
                                 element:
                                 <Service id="headlights">
-                                    <ServiceForm formid="headlights-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} _next={`/${locale}/thankyou`}>
+                                    <ServiceForm formid="headlights-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} captchakey={captchakey} _next={`/${locale}/thankyou`}>
                                         <input type="hidden" name="service" value="Polimerizare faruri" />
                                     </ServiceForm>
                                 </Service>,
@@ -155,7 +156,7 @@ function makeLocalePath(locale) {
                                 path: `/${locale}/services/computerized-test`,
                                 element:
                                 <Service id="computerized_test">
-                                    <ServiceForm formid="computerized-test-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} _next={`/${locale}/thankyou`}>
+                                    <ServiceForm formid="computerized-test-form" emailserviceid={emailserviceid} emailtemplateid={emailtemplateid} publickey={publickey} captchakey={captchakey} _next={`/${locale}/thankyou`}>
                                         <input type="hidden" name="service" value="Testare computerizată" />
                                     </ServiceForm>
                                 </Service>,

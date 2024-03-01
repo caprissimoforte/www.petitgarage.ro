@@ -1,16 +1,18 @@
 import "./form.css";
 import "./call-to-action.css";
 
+import { useState } from "react";
 import { getLocaleName } from "../locale/locale.js";
 import { useLocale, useTranslation } from "../module/i18n.js";
 
 import { useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const regex_tel = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 const regex_email = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-export function ServiceForm({ children, emailserviceid, emailtemplateid, publickey, formid, _next}) {
+export function ServiceForm({ children, emailserviceid, emailtemplateid, publickey, captchakey, formid, _next}) {
     const locale = useLocale();
     const localeName = getLocaleName(locale);
     const translate = useTranslation();
@@ -131,10 +133,17 @@ export function ServiceForm({ children, emailserviceid, emailtemplateid, publick
         return true;
     }
 
+    const [captchaRes, setCaptchaRes] = useState("");
+
+    const handlecaptcha = (value) => {
+        setCaptchaRes(value);
+    }
+
     const validate = event => {
         const name = document.getElementById(id_name);
         const tel = document.getElementById(id_tel);
         const email = document.getElementById(id_email);
+        const submit = document.getElementById(id_submit);
 
         if (!validateName(name)) {
             event.preventDefault();
@@ -151,10 +160,17 @@ export function ServiceForm({ children, emailserviceid, emailtemplateid, publick
             return;
         }
 
+        if (captchaRes === "") {
+            event.preventDefault();
+            return;
+        }
+
         event.preventDefault();
+        submit.disabled = true;
         emailjs
             .sendForm(emailserviceid, emailtemplateid, document.getElementById(formid), {
                 publicKey: publickey,
+                "g-recaptcha-response": captchaRes,
             })
             .then(
                 () => {
@@ -165,18 +181,19 @@ export function ServiceForm({ children, emailserviceid, emailtemplateid, publick
                     alert(translate(locale, "form_failurealert"));
                 },
             );
+        submit.disabled = false;
     };
 
     const date = new Date();
     const yearoptions = [];
 
     for (let y = date.getFullYear(); y >= 1950; y--) {
-        yearoptions.push(<option value={y}>{y}</option>);
+        yearoptions.push(<option key={y} value={y}>{y}</option>);
     }
 
     return (
         <div className="service-form-container">
-            <form onSubmit={validate} id={formid}>
+            <form action="?" method="POST" onSubmit={validate} id={formid}>
                 <input type="hidden" name="locale" value={`${locale} ( ${localeName} )`} />
 
                 {children}
@@ -228,6 +245,8 @@ export function ServiceForm({ children, emailserviceid, emailtemplateid, publick
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-320q17 0 28.5-11.5T320-360q0-17-11.5-28.5T280-400q-17 0-28.5 11.5T240-360q0 17 11.5 28.5T280-320Zm-40-120h80v-200h-80v200Zm160 80h320v-80H400v80Zm0-160h320v-80H400v80ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg>
                     <textarea onChange={autogrow} form={formid} type="text" id={id_desc} rows="5" name="desc" required placeholder={translate(locale, "form_placeholder_desc")}></textarea>
                 </div>
+
+                <ReCAPTCHA sitekey={captchakey} onChange={handlecaptcha} />
 
                 <input className="cta" form={formid} type="submit" id={id_submit} value={translate(locale, "form_btn_submit")} />
             </form>
