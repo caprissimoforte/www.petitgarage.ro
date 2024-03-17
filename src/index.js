@@ -187,6 +187,10 @@ const router = createBrowserRouter([
                 path: "/",
                 element: <Navigate to="/ro" replace={true}/>,
             },
+            {
+                path: "/googlebbc67c6e1c5ef926.html",
+                element: <>google-site-verification: googlebbc67c6e1c5ef926.html</>
+            },
             makeLocalePath("ro"),
             makeLocalePath("en"),
         ]
