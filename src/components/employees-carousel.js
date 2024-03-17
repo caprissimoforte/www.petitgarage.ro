@@ -6,7 +6,6 @@ import { useLocale, useTranslation } from "../module/i18n.js";
 
 /* Employees */
 import EmployeeAlexandraEnache from "../assets/Alexandra_Enache.jpg";
-import EmployeeAntonioTrifan from "../assets/Antonio_Trifan.jpeg";
 import EmployeeBeatrisDutu from "../assets/Beatris_Dutu.jpg";
 import EmployeeBogdanCeausu from "../assets/Bogdan_Ceausu.png";
 import EmployeeBogdanMeret from "../assets/Bogdan_Meret.jpg";
@@ -29,8 +28,7 @@ export function EmployeesCarousel() {
         <PersonCard image={EmployeeCameliaDraghiciu} name="Camelia" surname="Draghiciu" title={translate(locale, "employee_cfo")} />,
         <PersonCard image={EmployeeAlexandraEnache} name="Alexandra" surname="Enache" title={translate(locale, "employee_marketer")} />,
         <PersonCard image={EmployeeBeatrisDutu} name="Beatris" surname="Duță" title={translate(locale, "employee_accountant")} />,
-        <PersonCard image={EmployeeAntonioTrifan} name="Antonio" surname="Trifan" title={translate(locale, "employee_mechanic")} />,
-        <PersonCard image={EmployeeBogdanCeausu} name="Bogdan" surname="Ceaușu" title={translate(locale, "employee_bodyworks")} />,
+        <PersonCard image={EmployeeBogdanCeausu} name="Bogdan" surname="Ceauș" title={translate(locale, "employee_bodyworks")} />,
         <PersonCard image={EmployeeMadalinStefan} name="Madalin" surname="Stefan" title={translate(locale, "employee_bodyworks")} />,
     ];
 
@@ -67,7 +65,7 @@ export function EmployeesCarousel() {
 
             let k = (index + 1 - start_index) % count;
             // adding 0.5 is a hack but i can't take it off now otherwise slideshow is off
-            let g = i - count + 1.5;
+            let g = i - count + 1;
 
             if (i > index + count/2) {
                 k += count;
