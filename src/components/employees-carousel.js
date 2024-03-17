@@ -28,7 +28,7 @@ export function EmployeesCarousel() {
         <PersonCard image={EmployeeTiberiuEnache} name="Tiberiu" surname="Enache" title={translate(locale, "employee_car_damage")} />,
         <PersonCard image={EmployeeCameliaDraghiciu} name="Camelia" surname="Draghiciu" title={translate(locale, "employee_cfo")} />,
         <PersonCard image={EmployeeAlexandraEnache} name="Alexandra" surname="Enache" title={translate(locale, "employee_marketer")} />,
-        <PersonCard image={EmployeeBeatrisDutu} name="Beatris" surname="Duțu" title={translate(locale, "employee_accountant")} />,
+        <PersonCard image={EmployeeBeatrisDutu} name="Beatris" surname="Duță" title={translate(locale, "employee_accountant")} />,
         <PersonCard image={EmployeeAntonioTrifan} name="Antonio" surname="Trifan" title={translate(locale, "employee_mechanic")} />,
         <PersonCard image={EmployeeBogdanCeausu} name="Bogdan" surname="Ceaușu" title={translate(locale, "employee_bodyworks")} />,
         <PersonCard image={EmployeeMadalinStefan} name="Madalin" surname="Stefan" title={translate(locale, "employee_bodyworks")} />,
