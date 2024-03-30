@@ -7,6 +7,10 @@ export const en = {
     meta_desc_services: "Our services include: car damage survey, car air conditioning, mechanics, paint shop, 3D wheel geometry, computerized testing. ⭐ Address: Ploiesti, 66, Sondelor str., Prahova.",
     meta_keywords_services: "Damage assessment centre, Car air conditioning, Car mechanics, Car body shop, 3D wheel geometry, Car paint shop, Headlight polymerization, Computerized testing",
 
+    meta_title_contact: "Car service Petit Garage ⭐ Sondelor, nr. 66, Ploiesti Prahova",
+    meta_desc_contact: "Car service Petit Garage address Ploiesti, str. Sondelor, nr. 66, Jud. Prahova.⭐ Working hours: Monday-Friday: 8:30 - 16:30 / Saturday - Sunday: Closed. Phone: 0758 839 110.",
+    meta_keywords_contact: "Damage assessment centre Ploiesti, Car air conditioning Ploiesti, Car mechanic Ploiesti, Car body shop Ploiesti, 3D wheel geometry Ploiesti, Car painting Ploiesti, Headlight polimerization Ploiesti, Computerized testing Ploiesti.",
+
     page_home: "Home",
     page_services: "Services",
     page_contact: "Contact",
