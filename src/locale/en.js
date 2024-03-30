@@ -1,4 +1,8 @@
 export const en = {
+    meta_title_home: "Car service Petit Garage Ploiesti ⭐ Car service Ploiesti Prahova",
+    meta_desc_home: "Petit Garage offers a full range of automotive services, including damage report center, auto mechanics, auto electrics, body shop, auto painting and computerized testing",
+    meta_keywords_home: "Car service Ploiesti, car damage Ploiesti, car mechanics, car tinting Ploiesti, car painting Ploiesti.",
+
     page_home: "Home",
     page_services: "Services",
     page_contact: "Contact",

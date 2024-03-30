@@ -1,5 +1,7 @@
 import "./landing.css";
 
+import { Helmet } from "react-helmet";
+
 import { useState, useEffect } from "react";
 import { useLocale, useTranslation, usePath } from "../module/i18n.js";
 
@@ -122,6 +124,11 @@ function Landing() {
 
     return (
         <main className="landing_main">
+            <Helmet>
+                <meta name="title" content={translate(locale, "meta_title_home")}/>
+                <meta name="description" content={translate(locale, "meta_desc_home")}/>
+                <meta name="keywords" content={translate(locale, "meta_keywords_home")}/>
+            </Helmet>
             <Hero items={images} interval={4000} />
 
             <div className="landing-form-wrapper" id="service-background">

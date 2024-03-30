@@ -1,4 +1,8 @@
 export const ro = {
+    meta_title_home: "Service auto Petit Garage Ploiești ⭐ Service auto Ploiesti Prahova",
+    meta_desc_home: "Petit Garage oferă o gamă completă de servicii auto, inclusiv centru de constatare daune, mecanică auto, electrică auto, tinichigerie, vopsitorie auto și testare computerizată",
+    meta_keywords_home: "Service auto Ploiesti, daune auto Ploiesti, mecanică auto, tinichigerie Ploiesti, vopsitorie auto Ploiesti.",
+    
     page_home: "Acasă",
     page_services: "Servicii",
     page_contact: "Contact",
