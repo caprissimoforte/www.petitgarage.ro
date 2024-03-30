@@ -1,4 +1,7 @@
 RewriteEngine On
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^petitgarage.ro$
+RewriteRule ^(.*)$ https://petitgarage.ro/$1 [R=301,L]
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
