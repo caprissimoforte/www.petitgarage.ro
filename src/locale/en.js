@@ -3,6 +3,10 @@ export const en = {
     meta_desc_home: "Petit Garage offers a full range of automotive services, including damage report center, auto mechanics, auto electrics, body shop, auto painting and computerized testing",
     meta_keywords_home: "Car service Ploiesti, car damage Ploiesti, car mechanics, car tinting Ploiesti, car painting Ploiesti.",
 
+    meta_title_services: "Car service Petit Garage Ploiesti ⭐ Quality car services",
+    meta_desc_services: "Our services include: car damage survey, car air conditioning, mechanics, paint shop, 3D wheel geometry, computerized testing. ⭐ Address: Ploiesti, 66, Sondelor str., Prahova.",
+    meta_keywords_services: "Damage assessment centre, Car air conditioning, Car mechanics, Car body shop, 3D wheel geometry, Car paint shop, Headlight polymerization, Computerized testing",
+
     page_home: "Home",
     page_services: "Services",
     page_contact: "Contact",

@@ -2,7 +2,11 @@ export const ro = {
     meta_title_home: "Service auto Petit Garage Ploiești ⭐ Service auto Ploiesti Prahova",
     meta_desc_home: "Petit Garage oferă o gamă completă de servicii auto, inclusiv centru de constatare daune, mecanică auto, electrică auto, tinichigerie, vopsitorie auto și testare computerizată",
     meta_keywords_home: "Service auto Ploiesti, daune auto Ploiesti, mecanică auto, tinichigerie Ploiesti, vopsitorie auto Ploiesti.",
-    
+
+    meta_title_services: "Service auto Petit Garage Ploiești ⭐  Servicii auto de calitate",
+    meta_desc_services: "Serviciile noastre includ: constatare daune auto, climatizare auto, mecanică, tinichigerie vopsitorie, Geometrie roți 3D, testare computerizată. ⭐ Adresa: Ploiești, str. Sondelor, nr. 66, Prahova.",
+    meta_keywords_services: "Centru constatare daune, Climatizare auto, Mecanică auto, Tinichigerie auto, Geometrie roți 3D, Vopsitorie auto, Polimerizare faruri, Testare computerizată",
+
     page_home: "Acasă",
     page_services: "Servicii",
     page_contact: "Contact",

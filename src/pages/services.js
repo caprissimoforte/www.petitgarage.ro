@@ -2,6 +2,8 @@ import "./services.css";
 
 import { useLocale, useTranslation } from "../module/i18n.js";
 
+import { Helmet } from "react-helmet";
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -43,6 +45,11 @@ function Services() {
 
     return (
         <main className="services_main">
+            <Helmet>
+                <meta name="title" content={translate(locale, "meta_title_services")}/>
+                <meta name="description" content={translate(locale, "meta_desc_services")}/>
+                <meta name="keywords" content={translate(locale, "meta_keywords_services")}/>
+            </Helmet>
             <div className="services">
 
                 <ServiceSpan id="car-damage" image={AsistentaDauneImg} loading="eager" title={translate(locale, "services_car_damage")}>
